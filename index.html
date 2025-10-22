@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Rego Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rego Playground</h1>
+
+        <div class="editor-area">
+            <div class="code-panel">
+                <h2>Policy (Rego)</h2>
+                <textarea id="rego-policy" spellcheck="false" placeholder="package play&#10;&#10;default allow = false&#10;&#10;allow {&#10;  input.user == &quot;alice&quot;&#10;}"></textarea>
+            </div>
+
+            <div class="code-panel">
+                <h2>Input (JSON)</h2>
+                <textarea id="json-input" spellcheck="false" placeholder="{&#10;  &quot;user&quot;: &quot;alice&quot;,&#10;  &quot;method&quot;: &quot;GET&quot;&#10;}"></textarea>
+            </div>
+        </div>
+
+        <button id="evaluate-button">Evaluate (Requires OPA/Wasm)</button>
+
+        <div class="output-area">
+            <h2>Output</h2>
+            <pre id="evaluation-output">{ "allow": true }</pre>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
