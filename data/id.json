@@ -1,0 +1,25 @@
+{
+  "document_type": "State Identification Card",
+  "issuing_state": "California",
+  "id_number": "D1234567",
+  "document_class": "C",
+  "name": {
+    "last": "DOE",
+    "first": "JANE",
+    "middle": "MARIE"
+  },
+  "date_of_birth": "1995-05-15",
+  "sex": "F",
+  "height": "5-04",
+  "eye_color": "Brown",
+  "address": {
+    "street": "123 MAIN ST",
+    "city": "ANYTOWN",
+    "state": "CA",
+    "zip_code": "90210"
+  },
+  "issue_date": "2023-01-20",
+  "expiration_date": "2027-05-15",
+  "real_id_compliant": true,
+  "donor_status": true
+}

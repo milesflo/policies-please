@@ -1,0 +1,16 @@
+#FFDBAC	Very Light, Warm/Neutral
+#F1C27D	Light, Golden/Warm
+#E0AC69	Light-Medium, Warm
+#D4AA78	Light-Medium, Olive/Neutral
+#C68642	Medium, Warm Brown
+#9F7967	Medium, Neutral Brown
+#8D5524	Medium-Dark, Deep Brown
+#673E2F	Dark, Rich Brown
+#583123	Very Dark, Deep Reddish Brown
+#3B2219	Very Dark, Neutral Brown
+#FFE7D1	Pale, Cool/Pink Undertone
+#FFCD94	Light, Yellow/Peachy Undertone
+#EFBCA2	Medium-Light, Rosy/Cool Undertone
+#BE9167	Medium, Olive/Neutral Brown
+#926A2D	Medium-Dark, Yellow/Golden Brown
+#70361C	Dark, Reddish/Warm Undertone

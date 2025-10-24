@@ -1,7 +1,23 @@
+:root {
+    --render-window-height: 120px;
+    --render-window-width: 300px;
+}
+
+html, 
+body {
+    height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center; /* Centers vertically */
+  justify-content: center; /* Centers horizontally (optional) */
+    height: 100vh; /* Example: full viewport height */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
     background-color: #f4f4f4;
 }
 
@@ -16,6 +32,7 @@ body {
 
 h1, h2 {
     color: #333;
+    margin: 0;
 }
 
 .editor-area {
@@ -69,4 +86,48 @@ textarea {
     font-family: 'Consolas', 'Monaco', monospace;
     font-size: 14px;
     color: #000;
+}
+
+#render-window {
+    height: 180px;
+    background-color: #333a;
+    width:100%;
+}
+
+
+
+#render-window #person {
+  position: relative; /* Allows positioning of child elements */
+  width: 100px; /* Adjust overall size as needed */
+  height: 120px;
+  margin: 0px auto; /* Center the person */
+}
+
+#render-window #person #head {
+  width: 50px;
+  height: 50px;
+  background-color: lightsalmon;
+  border-radius: 50%; /* Creates a circle for the head */
+  position: absolute;
+  top: 20px;
+  left: 25px; /* Center the head on the body */
+}
+
+#render-window #person #body {
+  width: 60px;
+  height: 50px;
+  background-color: lightblue;
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  border-radius: 10px 10px 0 0; /* Slightly rounded shoulders */
+}
+
+#render-window #desk {
+    position:relative;
+    height:60px;
+    width: 100%;
+    /* top:100px; */
+    z-index: 100;
+    background-color: darkolivegreen;
 }

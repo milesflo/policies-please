@@ -8,17 +8,24 @@
 </head>
 <body>
     <div class="container">
-        <h1>Rego Playground</h1>
-
         <div class="editor-area">
+            <div class="left-col" style="width: 300px">
+                <div id="render-window">
+                    <div id="person">
+                        <div id="head"></div>
+                        <div id="body"></div>
+                    </div>
+                    <div id="desk">
+
+                    </div>
+                </div>
+                <div class="code-panel">
+                    <textarea id="json-input" style="height:300px" spellcheck="false" placeholder="{&#10;  &quot;user&quot;: &quot;alice&quot;,&#10;  &quot;method&quot;: &quot;GET&quot;&#10;}"></textarea>
+                </div>
+            </div>
             <div class="code-panel">
                 <h2>Policy (Rego)</h2>
-                <textarea id="rego-policy" spellcheck="false" placeholder="package play&#10;&#10;default allow = false&#10;&#10;allow {&#10;  input.user == &quot;alice&quot;&#10;}"></textarea>
-            </div>
-
-            <div class="code-panel">
-                <h2>Input (JSON)</h2>
-                <textarea id="json-input" spellcheck="false" placeholder="{&#10;  &quot;user&quot;: &quot;alice&quot;,&#10;  &quot;method&quot;: &quot;GET&quot;&#10;}"></textarea>
+                <textarea id="rego-policy" style="height:calc(100% - 27px)" spellcheck="false" placeholder="package play&#10;&#10;default allow = false&#10;&#10;allow {&#10;  input.user == &quot;alice&quot;&#10;}"></textarea>
             </div>
         </div>
 

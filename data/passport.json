@@ -1,0 +1,18 @@
+{
+  "document_type": "P",
+  "issuing_country_code": "USA",
+  "passport_number": "A12345678",
+  "surname": "DOE",
+  "given_names": "JANE MARIE",
+  "nationality": "UNITED STATES OF AMERICA",
+  "date_of_birth": "1990-01-01",
+  "sex": "F",
+  "place_of_birth": "NEW YORK, USA",
+  "date_of_issue": "2020-03-15",
+  "date_of_expiration": "2030-03-14",
+  "authority": "UNITED STATES DEPARTMENT OF STATE",
+  "machine_readable_zone": {
+    "line1": "P<USA<DOE<<JANE<MARIE<<<<<<<<<<<<<<<<<<<<<<",
+    "line2": "A12345678<9USA9001019F3003149<<<<<<<<<<<<<<0"
+  }
+}

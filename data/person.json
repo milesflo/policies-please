@@ -1,0 +1,24 @@
+{
+    "headshot_details": {
+        "gender": "Female",
+        "age_range": "25-35",
+        "hair": {
+            "color": "Dark Brown",
+            "style": "Wavy, shoulder-length",
+            "texture": "Fine"
+        },
+        "eyes": {
+            "color": "Hazel",
+            "shape": "Almond"
+        },
+        "skin": {
+            "color": "Fair with warm undertones",
+            "texture": "Smooth"
+        },
+        "facial_features": {
+            "glasses": false,
+            "beard": false,
+            "distinctive_marks": "None visible"
+        }
+    }
+}
