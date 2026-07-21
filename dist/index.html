@@ -1,48 +1,61 @@
-<!DOCTYPE html><html lang="en"><head><script type="importmap">{"imports":{"8wl9o":"/regorusjs_bg.8afcc66e.wasm"}}</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Rego Playground</title>
-    <link rel="stylesheet" href="/client.3a01df49.css">
-</head>
-<body>
-    <div class="container">
-        <div class="editor-area">
-            <div class="left-col" style="width: 300px">
-                <div id="render-window">
-                    <div id="person">
-                        <div id="head"></div>
-                        <div id="body"></div>
-                    </div>
-                    <div id="desk">
+<!DOCTYPE html><html lang=en><script type=importmap>{"imports":{"l4lkU":"/regorusjs_bg.aec4b03e.wasm"}}</script><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><title>Policies Please</title><link rel=stylesheet href=/client.6aaf9b3f.css><body>
+    <div class=container>
 
-                    </div>
-                </div>
-                <div class="code-panel">
-                    <textarea id="json-input" style="height: 300px" spellcheck="false" placeholder="{
-  &quot;user&quot;: &quot;alice&quot;,
-  &quot;method&quot;: &quot;GET&quot;
-}"></textarea>
-                </div>
+        <div class=game-header>
+            <div class=header-left>
+                <div class=game-title>POLICIES PLEASE</div>
+                <div class=game-subtitle>TSA Security Checkpoint</div>
             </div>
-            <div class="code-panel">
-                <h2>Policy (Rego)</h2>
-                <textarea id="rego-policy" style="height: calc(100% - 27px)" spellcheck="false" placeholder="package play
-
-default allow = false
-
-allow {
-  input.user == &quot;alice&quot;
-}"></textarea>
+            <div class=header-right>
+                <div id=level-day>DAY 1</div>
+                <div id=level-title>ID REQUIRED</div>
+                <div id=score-display></div>
             </div>
         </div>
 
-        <button id="evaluate-button">Evaluate (Requires OPA/Wasm)</button>
+        <div class=editor-area>
 
-        <div class="output-area">
-            <h2>Output</h2>
-            <pre id="evaluation-output">{ "allow": true }</pre>
+            <div class=left-col>
+                <div id=render-window>
+                    <div id=person>
+                        <div id=head></div>
+                        <div id=body></div>
+                    </div>
+                    <div id=stamp-overlay class=stamp style=display:none></div>
+                    <div id=desk></div>
+                </div>
+
+                <div class=traveler-bar>
+                    <span id=traveler-name>—</span>
+                    <span id=traveler-progress></span>
+                </div>
+
+                <div class=briefing-panel>
+                    <div class=briefing-label>CHECKPOINT DIRECTIVE</div>
+                    <pre id=briefing-text></pre>
+                </div>
+
+                <div class=panel-label>Traveler Data (JSON Input)</div>
+                <textarea id=json-input spellcheck=false></textarea>
+            </div>
+
+            <div class=right-col>
+                <div class=panel-label>Policy (Rego) — <code>package tsa</code></div>
+                <textarea id=rego-policy spellcheck=false></textarea>
+            </div>
+
         </div>
+
+        <div class=controls>
+            <button id=evaluate-button>Evaluate Policy</button>
+            <button id=next-button style=display:none>Next →</button>
+        </div>
+
+        <div class=output-area>
+            <pre id=evaluation-output></pre>
+        </div>
+
     </div>
-    <script type="module" src="/client.3c14d121.js"></script>
+    <script type=module src=/client.c539a3ab.js></script>
 
-</body></html>
+
