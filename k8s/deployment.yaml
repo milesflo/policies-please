@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: policies-please
+  namespace: policies-please
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: policies-please
+  template:
+    metadata:
+      labels:
+        app: policies-please
+    spec:
+      containers:
+        - name: policies-please
+          image: ghcr.io/milesflo/policies-please:latest
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: 50m
+              memory: 32Mi
+            limits:
+              cpu: 100m
+              memory: 64Mi

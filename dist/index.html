@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang="en"><head><script type="importmap">{"imports":{"8wl9o":"/regorusjs_bg.8afcc66e.wasm"}}</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Rego Playground</title>
+    <link rel="stylesheet" href="/client.3a01df49.css">
+</head>
+<body>
+    <div class="container">
+        <div class="editor-area">
+            <div class="left-col" style="width: 300px">
+                <div id="render-window">
+                    <div id="person">
+                        <div id="head"></div>
+                        <div id="body"></div>
+                    </div>
+                    <div id="desk">
+
+                    </div>
+                </div>
+                <div class="code-panel">
+                    <textarea id="json-input" style="height: 300px" spellcheck="false" placeholder="{
+  &quot;user&quot;: &quot;alice&quot;,
+  &quot;method&quot;: &quot;GET&quot;
+}"></textarea>
+                </div>
+            </div>
+            <div class="code-panel">
+                <h2>Policy (Rego)</h2>
+                <textarea id="rego-policy" style="height: calc(100% - 27px)" spellcheck="false" placeholder="package play
+
+default allow = false
+
+allow {
+  input.user == &quot;alice&quot;
+}"></textarea>
+            </div>
+        </div>
+
+        <button id="evaluate-button">Evaluate (Requires OPA/Wasm)</button>
+
+        <div class="output-area">
+            <h2>Output</h2>
+            <pre id="evaluation-output">{ "allow": true }</pre>
+        </div>
+    </div>
+    <script type="module" src="/client.3c14d121.js"></script>
+
+</body></html>
